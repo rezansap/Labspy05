@@ -133,24 +133,29 @@ print("="*30)
 ### Dibawah ini adalah program sederhana untuk membuat daftar nilai mahasiswa dengan menggunakan dictionary, dan menampilkan pilihan menu tambah, ubah, cari, hapus, dan lihat
 
 - berikut gambaran code source nya:
+
 ![gambar10](screenshot/praktikum0.PNG)
 
 - berikut dengan flowchart programnya:
+
 ![gambar11](screenshot/flowchart_daftar_nilai_mahasiswa.png)
 
 Dengan penjelasan source code sebagai berikut:
 - Code dibawah ini untuk membuat dictionary kosong, untuk menampung dictionary dengan menggunakan tuple
+
 ```python
 a = {}
 ```
 
 - Code dibawah ini untuk perulangan while, dan juga untuk menginisialkan penambahan menu pilihan Tambah, Ubah, Hapus, Cari, Lihat dan Keluar:
+
 ```python
 while True:
     x = input("(T)ambah, (U)bah, (H)apus, (C)ari, (L)ihat, (K)eluar: ")
 ```
 
 - Code dibawah adalah untuk syntax penambahan data, dengan ketentuan jika kita mengetikkan 't' pada keyboard, maka akan melakukan penambahan data dan ditampung kedalam dictionary 'a' yang telah kita buat, dengan nama sebagai keys, dan yang lainnya sebagai values
+
 ```python
     if x.lower() == 't':
         print("Tambah Data")
@@ -164,6 +169,7 @@ while True:
 ```
 
 - Code dibawah adalah untuk syntax mengubah data, dengan ketentuan jika kita mengetikkan 'u' pada keyboard, maka akan melakukan perubahan data yang telah di tampung ke dalam dictionary 'a' yang telah kita buat, tetapi data yang dapat diubah hanya data yang berupa values nya saja
+
 ```python
     elif x.lower() == 'u':
         print("Ubah Data")
@@ -180,6 +186,7 @@ while True:
 ```
 
 - Code dibawah adalah untuk syntax penghapusan data, dengan ketentuan jika kita mengetikkan 'h' pada keyboard, maka akan melakukan penghapusan data yang telah kita masukkan kedalam dictionary 'a' yang telah kita buat dengan statemen ```del a[nama]```
+
 ```python
     elif x.lower() == 'h':
         print("Hapus Data")
@@ -191,6 +198,7 @@ while True:
 ```
 
 - Code dibawah adalah untuk syntax pencarian data, dengan ketentuan jika kita mengetikkan 'c' pada keyboard, maka akan melakukan pencarian data dengan memasukkan keys dari data yang telah kita masukkan kedalam dictionary 'a' yang telah kita buat
+
 ```python
     elif x.lower() == 'c':
         print("Cari Data")
@@ -209,6 +217,7 @@ while True:
 ```
 
 - Code dibawah adalah untuk syntax melihat data, dengan ketentuan jika kita mengetikkan 'l' pada keyboard, maka akan menampilkan keseluruhan dari data yang telah kita masukkan dan ditampung ke dalam dictionary 'a' yang telah kita buat
+
 ```python
     elif x.lower() == 'l':
         if a.items():
@@ -226,6 +235,7 @@ while True:
 ```
 
 - Code dibawah adalah untuk menampilkan 'TIDAK ADA DATA', jika kita belum pernah memasukkan data kedalam dictionary 'a'
+
 ```python
         else:
             print("=" * 78)
@@ -238,12 +248,14 @@ while True:
 ```
 
 - sedangkan code dibawah adalah untuk syntax keluar dari program, untuk menghentikan program, dengan ketentuan jika kita mengetikkan 'k' pada keyboard, maka akan keluar dari program tersebut
+
 ```python
     elif x.lower() == 'k':
         break
 ```
 
 - Dan code yang terakhir adalah untuk syntax jika kita mengetikkan pada keyboard selain dari huruf yang telah di definisikan di atas seperti 't', 'u', 'h', 'c', 'l', dan 'k', maka akan menampilkan Pilih Menu Yang Tersedia
+
 ```python
     else:
         print("Pilih Menu Yang Tersedia")
